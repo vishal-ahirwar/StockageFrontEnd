@@ -10,6 +10,7 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appStockage
     main.cpp
+       MANUAL_FINALIZATION
 )
 
 qt_add_qml_module(appStockage
@@ -17,6 +18,7 @@ qt_add_qml_module(appStockage
     VERSION 1.0
     QML_FILES
         Main.qml
+       # RESOURCES android/res/values/styles.xml android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -29,7 +31,9 @@ set_target_properties(appStockage PROPERTIES
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
 )
-
+set_property(TARGET app${PROJECT_NAME} APPEND PROPERTY
+    QT_ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/android
+)
 target_link_libraries(appStockage
     PRIVATE Qt6::Quick
 )
@@ -40,3 +44,4 @@ install(TARGETS appStockage
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+qt_finalize_executable(app${PROJECT_NAME})

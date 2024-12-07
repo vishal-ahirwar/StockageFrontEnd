@@ -3,7 +3,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Make the app full screen by hiding the status and navigation bars -->
         <item name="android:windowNoTitle">true</item>
-        
+        <item name="android:windowFullscreen">true</item>
         <!-- Handle display cutout (notches, holes) -->
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <!-- This will make content extend behind the cutout, or you can use 'default' to leave space -->
@@ -11,5 +11,10 @@
         <!-- Optional: Allow translucent status/navigation bar, if needed -->
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#0000FF</item>
+        <item name="android:statusBarColor">#000000</item>
     </style>
 </resources>

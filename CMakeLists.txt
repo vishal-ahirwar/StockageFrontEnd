@@ -18,6 +18,9 @@ qt_add_qml_module(appStockage
     VERSION 1.0
     QML_FILES
         Main.qml
+        QML_FILES TopBar.qml
+        QML_FILES KeyInput.qml
+        QML_FILES StyleButton.qml
        # RESOURCES android/res/values/styles.xml android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
 )
 

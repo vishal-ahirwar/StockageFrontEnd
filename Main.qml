@@ -5,8 +5,7 @@ ApplicationWindow {
     visible: true
     width: 360
     height: 640
-    title: "Password Input with Pop-up"
-
+    title: "Stockage"
     KeyInput
     {
         id:keyInput
@@ -14,6 +13,8 @@ ApplicationWindow {
 
     StyleButton
     {
+        buttonBackgroundColor:"black"
+        fontColor:"white"
         anchors.top:keyInput.bottom
         anchors.left:keyInput.left
         anchors.right:keyInput.right

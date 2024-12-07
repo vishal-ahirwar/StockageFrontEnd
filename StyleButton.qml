@@ -24,6 +24,6 @@ Button
         implicitWidth: 100
         implicitHeight: 40
         opacity: enabled ? 1 : 0.3
-        radius:8
+        radius:16
     }
 }

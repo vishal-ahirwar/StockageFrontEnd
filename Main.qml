@@ -7,7 +7,7 @@ ApplicationWindow {
     width: 360
     height: 640
     title: "Stockage"
-
+    id: rootWindow
     AuthenticationPage {
         anchors.fill: parent
     }

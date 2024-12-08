@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 
 Rectangle {
+    id: control
     anchors {
         bottom: parent.bottom
         left: parent.left

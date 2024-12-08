@@ -18,6 +18,6 @@ Rectangle
         anchors.centerIn:parent
         horizontalAlignment:Text.AlignHCenter
         verticalAlignment:Text.AlignVCenter
-        font.pixelSize:18
+        font.pixelSize:28
     }
 }

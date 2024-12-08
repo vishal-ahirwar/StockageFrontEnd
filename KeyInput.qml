@@ -9,13 +9,13 @@ TextInput
     horizontalAlignment:Qt.AlignHCenter
     verticalAlignment:Qt.AlignVCenter
     echoMode:TextInput.Password
-    font.pixelSize:32
+    font.pixelSize:28
     clip:true
     Text
     {
         anchors.centerIn:parent
         text:parent.text.length==0?"Stockage Key":""
-        font.pixelSize:32
+        font.pixelSize:28
         horizontalAlignment:Qt.AlignHCenter
         verticalAlignment:Qt.AlignVCenter
         color:"black"

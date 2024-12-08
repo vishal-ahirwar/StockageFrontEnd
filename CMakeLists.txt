@@ -22,6 +22,12 @@ qt_add_qml_module(appStockage
         QML_FILES KeyInput.qml
         QML_FILES StyleButton.qml
         QML_FILES StylePopUp.qml
+        QML_FILES BottomBar.qml
+        QML_FILES AuthenticationPage.qml
+        QML_FILES ViewDataPage.qml
+        QML_FILES DeleteDataPage.qml
+        QML_FILES AddNewDataPage.qml
+        QML_FILES HelpPage.qml
        # RESOURCES android/res/values/styles.xml android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
 )
 

@@ -9,7 +9,7 @@ Popup {
         width:parent.width*0.8
         anchors.centerIn:parent
         text:control.text
-        font.pixelSize:32
+        font.pixelSize:28
         horizontalAlignment:Text.AlignHCenter
         verticalAlignment:Text.AlignVCenter
         wrapMode:Text.WordWrap

@@ -9,8 +9,8 @@ Rectangle {
         right: parent.right
     }
     height: parent.height * 0.1
-    topLeftRadius: 16
-    topRightRadius: 16
+    topLeftRadius: 160
+    topRightRadius: 160
     color: "black"
 
     RowLayout {

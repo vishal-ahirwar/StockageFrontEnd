@@ -63,6 +63,7 @@ Item {
                 top: parent.bottom
                 left: parent.left
                 right: parent.right
+                margins: 15
                 // horizontalCenter:parent.horizontalCenter
             }
             height: rootWindow.height * 0.07

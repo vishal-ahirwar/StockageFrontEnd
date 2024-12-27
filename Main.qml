@@ -9,10 +9,28 @@ ApplicationWindow {
     title: "Stockage"
     id: rootWindow
     AuthenticationPage {
-        anchors.fill: parent
+        anchors {
+            left: parent.left
+            right: parent.right
+            top: parent.top
+            bottom: bottomBar.top
+        }
     }
 
     BottomBar {
         id: bottomBar
+        Behavior on height {
+            NumberAnimation {
+                duration: 250
+            }
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                parent.height = parent.height == rootWindow.height
+                        * 0.02 ? rootWindow.height * 0.1 : rootWindow.height * 0.02
+            }
+        }
     }
 }

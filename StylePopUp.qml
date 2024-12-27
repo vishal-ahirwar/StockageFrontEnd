@@ -4,6 +4,7 @@ import QtQuick.Controls
 
 Popup {
     id: control
+    //TODO Animation
     property string text: "Wait! What?"
     Text {
         width: parent.width * 0.8

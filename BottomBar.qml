@@ -8,9 +8,10 @@ Rectangle {
         left: parent.left
         right: parent.right
     }
+    anchors.margins: 15
     height: parent.height * 0.1
-    topLeftRadius: 160
-    topRightRadius: 160
+    radius: 16
+
     color: "black"
 
     RowLayout {
@@ -21,24 +22,28 @@ Rectangle {
             text: "New"
             buttonBackgroundColor: "black"
             fontColor: "white"
+            font.pixelSize: 16
         }
         StyleButton {
             Layout.fillWidth: true
             text: "Delete"
             buttonBackgroundColor: "black"
             fontColor: "white"
+            font.pixelSize: 16
         }
         StyleButton {
             Layout.fillWidth: true
             text: "View"
             buttonBackgroundColor: "black"
             fontColor: "white"
+            font.pixelSize: 16
         }
         StyleButton {
             Layout.fillWidth: true
             text: "Help"
             buttonBackgroundColor: "black"
             fontColor: "white"
+            font.pixelSize: 16
         }
     }
 }

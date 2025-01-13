@@ -19,18 +19,5 @@ ApplicationWindow {
 
     BottomBar {
         id: bottomBar
-        Behavior on height {
-            NumberAnimation {
-                duration: 250
-            }
-        }
-
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                parent.height = parent.height == rootWindow.height
-                        * 0.02 ? rootWindow.height * 0.1 : rootWindow.height * 0.02
-            }
-        }
     }
 }

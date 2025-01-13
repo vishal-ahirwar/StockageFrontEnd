@@ -18,6 +18,7 @@ Item {
         width: parent.width * 0.7
         height: parent.height * 0.07
         text: "Submit"
+        font.pixelSize: 16
         // font.pixelSize:32
         onClicked: {
             if (keyInput.length < 4) {
@@ -33,6 +34,7 @@ Item {
         anchors.centerIn: parent
         width: parent.width * 0.7
         height: parent.height * 0.5
+        font.pixelSize: 16
         text: "Error : Please Enter your Stockage Key first :)"
         StyleButton {
             anchors {
@@ -74,6 +76,7 @@ Item {
                 buttonBackgroundColor: "black"
                 fontColor: "white"
                 text: "Yes"
+                font.pixelSize: 16
                 onClicked: {
                     confirmPopup.close()
                 }
@@ -84,6 +87,7 @@ Item {
                 buttonBackgroundColor: "black"
                 fontColor: "white"
                 text: "No"
+                font.pixelSize: 16
                 onClicked: {
                     confirmPopup.close()
                 }

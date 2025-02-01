@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file>AddNewDataPage.qml</file>
+        <file>AuthenticationPage.qml</file>
+        <file>BottomBar.qml</file>
+        <file>DeleteDataPage.qml</file>
+        <file>HelpPage.qml</file>
+        <file>KeyInput.qml</file>
+        <file>Main.qml</file>
+        <file>StyleButton.qml</file>
+        <file>StylePopUp.qml</file>
+        <file>TopBar.qml</file>
+        <file>ViewDataPage.qml</file>
+    </qresource>
+</RCC>
